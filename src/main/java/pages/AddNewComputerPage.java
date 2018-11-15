@@ -22,7 +22,7 @@ public class AddNewComputerPage extends ActionsSetup {
     }
 
     public static WebElement createThisComputerBtn(){
-        return getElement("//input[@type='submit']", DELAY, XPATH);
+        return getElement("//div[@class='actions']//input[@type='submit']", DELAY, XPATH);
     }
 
     public static WebElement cancelBtn(){
