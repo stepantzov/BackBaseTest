@@ -34,3 +34,7 @@ lib/
 
 !/README.md
 
+.gitignore
+!/pom.xml
+src/main/resources/
+src/test/java/tests/
