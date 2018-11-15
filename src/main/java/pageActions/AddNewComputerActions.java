@@ -11,19 +11,22 @@ public class AddNewComputerActions extends AddNewComputerPage {
     }
 
     public static void fillComputerNameField(String computerName){
+        computerNameFld().clear();
         sendKeys(computerNameFld(), computerName);
     }
 
     public static void fillIntroducedDateField(String introducedDate){
+        introducedDateFld().clear();
         sendKeys(introducedDateFld(), introducedDate);
     }
 
     public static void fillDiscontinuedDateField(String discontinuedDate){
-        sendKeys(introducedDateFld(), discontinuedDate);
+        discontinuedDateFld().clear();
+        sendKeys(discontinuedDateFld(), discontinuedDate);
     }
 
-    public static void selectCompany(){
-        companyDropdown().selectByIndex(1);
+    public static void selectCompany(int index){
+        companyDropdown().selectByIndex(index);
     }
 
     public static void clickCreateComputerButton(){

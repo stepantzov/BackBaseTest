@@ -37,4 +37,3 @@ lib/
 .gitignore
 !/pom.xml
 src/main/resources/
-src/test/java/tests/

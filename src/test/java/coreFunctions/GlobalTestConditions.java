@@ -3,7 +3,7 @@ package coreFunctions;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 
-public class TestConditions extends DriverSetup {
+public class GlobalTestConditions extends DriverSetup {
     @BeforeClass
     public static void initializeTestBaseSetup() {
         try {
