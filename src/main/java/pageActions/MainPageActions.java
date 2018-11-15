@@ -1,4 +1,6 @@
 package pageActions;
 
-public class MainPageActions {
+import pages.MainPage;
+
+public class MainPageActions extends MainPage {
 }
