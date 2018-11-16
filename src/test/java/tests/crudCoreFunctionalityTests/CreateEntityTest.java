@@ -1,19 +1,18 @@
-package tests.crudCoreTests;
+package tests.crudCoreFunctionalityTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
-import coreFunctions.TestConditionsActions;
+import coreFunctions.TestEntityConditions;
 import org.junit.Assert;
 import org.junit.Test;
 import pageActions.AddNewComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class CreateEntity extends GlobalTestConditions {
+public class CreateEntityTest extends GlobalTestConditions {
     @Test
-    public void createNewComputerEntry() {
+    public void createNewComputerEntryTest() {
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
-        TimeStamp.getTimeStampFormatted(0, "yyyy-MM-dd");
 
         System.out.println("Create New Computer entity test has started. ");
         mainPageActions.clickAddNewComputer();
@@ -25,6 +24,6 @@ public class CreateEntity extends GlobalTestConditions {
         Assert.assertEquals("Done! Computer Test01 has been created", mainPageActions.getAlertMessageTextShown());
 
         System.out.println("Create New Computer entity test has been completed. ");
-        TestConditionsActions.deleteEntityAsPostCondition();
+        TestEntityConditions.deleteEntityAsPostCondition();
     }
 }

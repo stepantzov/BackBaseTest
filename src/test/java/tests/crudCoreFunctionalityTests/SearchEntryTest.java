@@ -1,18 +1,18 @@
-package tests.crudCoreTests;
+package tests.crudCoreFunctionalityTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
-import coreFunctions.TestConditionsActions;
+import coreFunctions.TestEntityConditions;
 import org.junit.Assert;
 import org.junit.Test;
 import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class SearchEntry extends GlobalTestConditions {
+public class SearchEntryTest extends GlobalTestConditions {
     @Test
-    public void searchForEntityAndVerifyResults() {
-        TestConditionsActions.createEntityAsPrecondition();
+    public void searchForEntityAndVerifyResultsTest() {
+        TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
         System.out.println("Search for created entity test has started. ");
@@ -28,12 +28,12 @@ public class SearchEntry extends GlobalTestConditions {
         Assert.assertEquals("Apple Inc.", mainPageActions.entityCompanyValueFromList());
 
         System.out.println("Search for created entity test has been completed. ");
-        TestConditionsActions.deleteEntityAsPostCondition();
+        TestEntityConditions.deleteEntityAsPostCondition();
     }
 
     @Test
-    public void searchForCreatedEntityAndOpenDetails() {
-        TestConditionsActions.createEntityAsPrecondition();
+    public void searchForCreatedEntityAndOpenDetailsTest() {
+        TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
         System.out.println("Search for created entity and verify details Test has started. ");
@@ -49,6 +49,6 @@ public class SearchEntry extends GlobalTestConditions {
         Assert.assertEquals("Apple Inc.", EditComputerActions.getEntityCompany());
 
         System.out.println("Search for created entity and verify details Test has been completed. ");
-        TestConditionsActions.deleteEntityAsPostCondition();
+        TestEntityConditions.deleteEntityAsPostCondition();
     }
 }
