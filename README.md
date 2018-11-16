@@ -21,14 +21,15 @@ Current framework contains the list of test cases which is split between core CR
 - Navigate to the project catalog classpath on commandline, eg. c:\Maven\BackBaseTest;
 - At this moment there three tests suites available to execution:
 
-TestCoreSuite.class - contains Critical priority functionality related to CRUD operations;
+**TestCoreSuite.class** - contains Critical priority functionality related to CRUD operations;
 
-TestEdgeCasesSuite.class - contains Medium priority Test Cases, such as fields validation test cases;
+**TestEdgeCasesSuite.class** - contains Medium priority Test Cases, such as fields validation test cases;
 
-TestFullScopeSuite.class - contains full Test Cases scope with Critical and Medium priority;
+**TestFullScopeSuite.class** - contains full Test Cases scope with Critical and Medium priority;
 
 
-- According to above statement, to Run the necessary test suite, please use the next Maven commands below:
+
+- To Run the necessary test suite, please use the next Maven commands below:
 
 **mvn install -DrunSuite=TestCoreSuite.class**
 
