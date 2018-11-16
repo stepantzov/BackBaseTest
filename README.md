@@ -5,11 +5,11 @@ Automated framework for sample computer database
 Current framework contains the list of test cases which is split between core CRUD functionality and edge scenarios tests (for example mandatory fields verification).
 
 ### Prerequisites
-Chromedriver;
-Java 8; 
-Maven;
-Junit;
-Sutable Command line (CMD or GIT Bash);
+- Chromedriver;
+- Java 8; 
+- Maven;
+- Junit;
+- Sutable Command line (CMD or GIT Bash);
 
 ### Installing
 - Download project from GIT repo using next link https://github.com/stepantzov/BackBaseTest.git.
@@ -24,8 +24,10 @@ TestCoreSuite.class - contains Critical functionality related to CRUD operations
 TestEdgeCasesSuite.class - contains all the Test Cases with medium priority, such as fields validation test cases;
 - According to above statement, to Run the necessary test suite please use the next Maven commands below:
 
-**mvn install -DrunSuite=TestCoreSuite.class
-mvn install -DrunSuite=TestEdgeCasesSuite.class**
+**mvn install -DrunSuite=TestCoreSuite.class**
+
+**mvn install -DrunSuite=TestEdgeCasesSuite.class**
+
 - observe the tests results from console log.
 
 ## Built With
