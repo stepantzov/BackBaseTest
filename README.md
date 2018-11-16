@@ -1,30 +1,40 @@
 # BackBaseTest
-Basic automated framework for sample computer database
+Automated framework for sample computer database
 
 ## Getting Started
- 
-### Prerequisites
+Current framework contains the list of test cases which is split between core CRUD functionality and edge scenarios tests (for example mandatory fields verification).
 
-java 8; 
-Maven;
-Junit
+### Prerequisites
+- Chromedriver;
+- Java 8; 
+- Maven;
+- Junit;
+- Sutable Command line (CMD or GIT Bash);
 
 ### Installing
-Just download from git repo;
-Change driverPath variable - a location of Chromedriver to your local chromedriver path;
-Open windows command line; 
-Navigate to the designated catalog with project;
-Run next command in command line: 
-mvn package
+- Download project from GIT repo using next link https://github.com/stepantzov/BackBaseTest.git.
+- Install all the necessary prerequisites from above Prerequisites. 
+- Change CHROME_DRIVER_PATH variable at GlobalDefinitions.class to location of Chromedriver on your local machine;
 
 ## Running the tests 
+- Open any command or GIT Bash;
+- Navigate to the project catalog classpath on commandline, eg. c:\Maven\BackBaseTest;
+- At this moment there two tests suites available to execution:
 
+TestCoreSuite.class - contains Critical functionality related to CRUD operations;
+TestEdgeCasesSuite.class - contains all the Test Cases with medium priority, such as fields validation test cases;
+
+- According to above statement, to Run the necessary test suite, please use the next Maven commands below:
+
+**mvn install -DrunSuite=TestCoreSuite.class**
+
+**mvn install -DrunSuite=TestEdgeCasesSuite.class**
+
+- observe the tests results from console log.
 
 ## Built With
-
 * [Maven](https://maven.apache.org/) - Dependency Management
 
 
 ## Authors
-Ivan Stepantsov 
-
+Ivan Stepantsov
