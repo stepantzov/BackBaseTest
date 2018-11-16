@@ -1,5 +1,5 @@
 # BackBaseTest
-Basic automated framework for sample computer database
+Automated framework for sample computer database
 
 ## Getting Started
 Current framework contains list of test cases which split between core CRUD functionality 
