@@ -1,19 +1,20 @@
 package tests;
 
 import coreFunctions.testSuiteBuilder.TestEdgeCasesSuite;
-import org.junit.Assert;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
 
 public class TestEdgeCasesSuiteRunner {
     public static void main(String[] args) {
-        Result coreTestsResult = JUnitCore.runClasses(TestEdgeCasesSuite.class);
+        Result edgeTestsResult = JUnitCore.runClasses(TestEdgeCasesSuite.class);
 
-        for (Failure failure : coreTestsResult.getFailures()) {
+        for (Failure failure : edgeTestsResult.getFailures()) {
             System.out.println(failure.toString());
         }
 
-        Assert.assertTrue("Edge Functionality test suite completed with failure. ", coreTestsResult.wasSuccessful());
+        System.out.println("Test passed successfully: " + edgeTestsResult.wasSuccessful());
+        System.out.format("Number of TC executed: %d; Number of Failures: %d",
+                edgeTestsResult.getRunCount(), edgeTestsResult.getFailureCount());
     }
 }

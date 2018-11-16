@@ -1,7 +1,6 @@
 package tests;
 
 import coreFunctions.testSuiteBuilder.TestCoreSuite;
-import org.junit.Assert;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
@@ -14,6 +13,8 @@ public class TestCoreSuiteRunner {
             System.out.println(failure.toString());
         }
 
-        Assert.assertTrue("Core Functionality test suite completed with failure. ", coreTestsResult.wasSuccessful());
+        System.out.println("Test passed successfully: " + coreTestsResult.wasSuccessful());
+        System.out.format("Number of TC executed: %d; Number of Failures: %d",
+                coreTestsResult.getRunCount(), coreTestsResult.getFailureCount());
     }
 }
