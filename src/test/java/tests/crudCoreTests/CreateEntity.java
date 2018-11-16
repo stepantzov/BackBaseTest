@@ -1,4 +1,4 @@
-package tests;
+package tests.crudCoreTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;

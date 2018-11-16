@@ -1,4 +1,4 @@
-package tests;
+package tests.crudCoreTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -10,7 +10,7 @@ import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class EntityUpdate extends GlobalTestConditions {
+public class UpdateEntity extends GlobalTestConditions {
     @Test
     public void updateEntity() {
         TestConditionsActions.createEntityAsPrecondition();

@@ -1,4 +1,4 @@
-package tests;
+package tests.crudCoreTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -8,7 +8,7 @@ import org.junit.Test;
 import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 
-public class EntityDelete extends GlobalTestConditions {
+public class DeleteEntity extends GlobalTestConditions {
     @Test
     public void deleteComputer() {
         TestConditionsActions.createEntityAsPrecondition();
@@ -21,6 +21,10 @@ public class EntityDelete extends GlobalTestConditions {
         mainPageActions.clickOnEntityNameLink();
         EditComputerActions.deleteEntity();
         Assert.assertEquals("Done! Computer has been deleted", mainPageActions.getAlertMessageTextShown());
+
+        mainPageActions.setSearchFieldValue("Test01");
+        mainPageActions.clickFilterByNameButton();
+        Assert.assertTrue("Entity is present on search results. ", mainPageActions.verifyNoComputerFound());
 
         System.out.println("Test Delete Computer Entity has been completed. ");
     }

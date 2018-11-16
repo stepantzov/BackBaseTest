@@ -50,4 +50,8 @@ public class MainPageActions extends MainPage {
     public void clearSearchField() {
         searchFld().clear();
     }
+
+    public Boolean verifyNoComputerFound(){
+        return noEntityFound().isDisplayed();
+    }
 }

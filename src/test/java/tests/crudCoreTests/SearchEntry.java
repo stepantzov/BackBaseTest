@@ -1,4 +1,4 @@
-package tests;
+package tests.crudCoreTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -9,7 +9,7 @@ import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class SearchForCreatedEntry extends GlobalTestConditions {
+public class SearchEntry extends GlobalTestConditions {
     @Test
     public void searchForEntityAndVerifyResults() {
         TestConditionsActions.createEntityAsPrecondition();

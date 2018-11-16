@@ -24,11 +24,11 @@ public class TestConditionsActions {
 
     public static void createEntityAsPrecondition() {
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
-        TimeStamp.getTimeStampFormatted(0, "yyyy-MM-dd");
 
         System.out.println("Creating new Computer entity. ");
         mainPageActions.clickAddNewComputer();
 
+        AddNewComputerActions.fillComputerNameField("Test01");
         AddNewComputerActions.fillIntroducedDateField(TimeStamp.getTimeStampFormatted(0, "yyyy-MM-dd"));
         AddNewComputerActions.fillDiscontinuedDateField(TimeStamp.getTimeStampFormatted(1, "yyyy-MM-dd"));
         AddNewComputerActions.selectCompany(1);

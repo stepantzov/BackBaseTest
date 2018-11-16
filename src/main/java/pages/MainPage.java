@@ -35,4 +35,8 @@ public class MainPage extends ActionsSetup {
     public static WebElement entityCompanyValueOnList() {
         return getElement("//*[@class='computers zebra-striped']//td[4]", DELAY, XPATH);
     }
+
+    public static WebElement noEntityFound() {
+        return getElement("//*[contains(text(),'No computers found')]", DELAY, XPATH);
+    }
 }
