@@ -12,7 +12,7 @@ Junit;
 Sutable Command line (CMD or GIT Bash);
 
 ### Installing
-- Download project from GIT repo.
+- Download project from GIT repo using next link https://github.com/stepantzov/BackBaseTest.git.
 - Install all the necessary prerequisites from above. 
 - Change CHROME_DRIVER_PATH variable at GlobalDefinitions.class to location of Chromedriver on your local machine;
 
@@ -22,7 +22,7 @@ Sutable Command line (CMD or GIT Bash);
 - At this moment there two tests suites available to execution: 
 TestCoreSuite.class - contains Critical functionality related to CRUD operations;
 TestEdgeCasesSuite.class - contains all the Test Cases with medium priority, such as fields validation test cases;
-- To Run the necessary test suite please use the next Maven commands below: 
+- According to above statement, to Run the necessary test suite please use the next Maven commands below: 
 **mvn install -DrunSuite=TestCoreSuite.class
 mvn install -DrunSuite=TestEdgeCasesSuite.class**
 - observe the tests results from console log.
