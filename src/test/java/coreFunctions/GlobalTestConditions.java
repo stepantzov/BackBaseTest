@@ -1,11 +1,11 @@
 package coreFunctions;
 
-import org.junit.AfterClass;
-import org.junit.BeforeClass;
+import org.junit.After;
+import org.junit.Before;
 
 public class GlobalTestConditions extends DriverSetup {
-    @BeforeClass
-    public static void initializeTestBaseSetup() {
+    @Before
+    public void initializeTestBaseSetup() {
         try {
             DriverSetup.initDriver(URL);
         } catch (Exception e) {
@@ -13,8 +13,8 @@ public class GlobalTestConditions extends DriverSetup {
         }
     }
 
-    @AfterClass
-    public static void tearDown() {
+    @After
+    public void tearDown() {
         System.out.println("Closing browser. ");
         driverInstance.quit();
         driverInstance = null;

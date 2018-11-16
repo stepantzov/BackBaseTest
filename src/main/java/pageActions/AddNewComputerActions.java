@@ -37,7 +37,7 @@ public class AddNewComputerActions extends AddNewComputerPage {
         elementClick(cancelBtn());
     }
 
-    public static Boolean verifyIfNameValidationAppear() {
+    public static Boolean verifyIfValidationAppear() {
         return validationOnComputerName().isDisplayed();
     }
 }

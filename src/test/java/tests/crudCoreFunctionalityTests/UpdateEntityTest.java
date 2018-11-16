@@ -1,4 +1,4 @@
-package tests.crudCoreTests;
+package tests.crudCoreFunctionalityTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -10,9 +10,9 @@ import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class UpdateEntity extends GlobalTestConditions {
+public class UpdateEntityTest extends GlobalTestConditions {
     @Test
-    public void updateEntity() {
+    public void updateEntityTest() {
         TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 

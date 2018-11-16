@@ -1,4 +1,4 @@
-package tests.crudCoreTests;
+package tests.crudCoreFunctionalityTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -8,9 +8,9 @@ import org.junit.Test;
 import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 
-public class DeleteEntity extends GlobalTestConditions {
+public class DeleteEntityTest extends GlobalTestConditions {
     @Test
-    public void deleteComputer() {
+    public void deleteComputerTest() {
         TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 

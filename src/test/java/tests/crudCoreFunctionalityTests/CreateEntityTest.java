@@ -1,4 +1,4 @@
-package tests.crudCoreTests;
+package tests.crudCoreFunctionalityTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -9,9 +9,9 @@ import pageActions.AddNewComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class CreateEntity extends GlobalTestConditions {
+public class CreateEntityTest extends GlobalTestConditions {
     @Test
-    public void createNewComputerEntry() {
+    public void createNewComputerEntryTest() {
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
         System.out.println("Create New Computer entity test has started. ");

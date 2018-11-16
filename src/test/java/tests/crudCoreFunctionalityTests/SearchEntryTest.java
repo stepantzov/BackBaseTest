@@ -1,4 +1,4 @@
-package tests.crudCoreTests;
+package tests.crudCoreFunctionalityTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
@@ -9,9 +9,9 @@ import pageActions.EditComputerActions;
 import pageActions.MainPageActions;
 import utils.TimeStamp;
 
-public class SearchEntry extends GlobalTestConditions {
+public class SearchEntryTest extends GlobalTestConditions {
     @Test
-    public void searchForEntityAndVerifyResults() {
+    public void searchForEntityAndVerifyResultsTest() {
         TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
@@ -32,7 +32,7 @@ public class SearchEntry extends GlobalTestConditions {
     }
 
     @Test
-    public void searchForCreatedEntityAndOpenDetails() {
+    public void searchForCreatedEntityAndOpenDetailsTest() {
         TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
