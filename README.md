@@ -13,7 +13,7 @@ Current framework contains the list of test cases which is split between core CR
 
 ### Installing
 - Download project from GIT repo using next link https://github.com/stepantzov/BackBaseTest.git.
-- Install all the necessary prerequisites from above. 
+- Install all the necessary prerequisites from above Prerequisites. 
 - Change CHROME_DRIVER_PATH variable at GlobalDefinitions.class to location of Chromedriver on your local machine;
 
 ## Running the tests 
