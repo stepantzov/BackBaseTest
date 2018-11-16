@@ -2,18 +2,18 @@
 Automated framework for sample computer database
 
 ## Getting Started
-Current framework contains list of test cases which split between core CRUD functionality 
-and edge scenarios tests (like mandatory fields verification).
+Current framework contains the list of test cases which is split between core CRUD functionality and edge scenarios tests (for example mandatory fields verification).
 
 ### Prerequisites
-chromedriver;
-java 8; 
+Chromedriver;
+Java 8; 
 Maven;
 Junit;
+Sutable Command line (CMD or GIT Bash);
 
 ### Installing
 - Download project from GIT repo.
-- Install all the necessary prerequisites. 
+- Install all the necessary prerequisites from above. 
 - Change CHROME_DRIVER_PATH variable at GlobalDefinitions.class to location of Chromedriver on your local machine;
 
 ## Running the tests 
