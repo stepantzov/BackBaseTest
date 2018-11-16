@@ -29,13 +29,12 @@ Current framework contains the list of test cases which is split between core CR
 
 
 
-- To Run the necessary test suite, please use the next Maven commands below:
+
+- To Run the necessary test suite 1-3, please use the next Maven commands below:
 
 **mvn install -DrunSuite=TestCoreSuite.class**
 
 **mvn install -DrunSuite=TestEdgeCasesSuite.class**
-
-- to run the full Test Scope you can use 
 
 **mvn install -DrunSuite=TestFullScopeSuite.class**
 
