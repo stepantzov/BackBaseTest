@@ -28,4 +28,8 @@ public class AddNewComputerPage extends ActionsSetup {
     public static WebElement cancelBtn(){
         return getElement("//a[text()='Cancel']", DELAY, XPATH);
     }
+
+    public static WebElement validationOnComputerName() {
+        return getElement("//div[@class='clearfix error']", DELAY, XPATH);
+    }
 }

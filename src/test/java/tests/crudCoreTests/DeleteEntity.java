@@ -2,7 +2,7 @@ package tests.crudCoreTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
-import coreFunctions.TestConditionsActions;
+import coreFunctions.TestEntityConditions;
 import org.junit.Assert;
 import org.junit.Test;
 import pageActions.EditComputerActions;
@@ -11,7 +11,7 @@ import pageActions.MainPageActions;
 public class DeleteEntity extends GlobalTestConditions {
     @Test
     public void deleteComputer() {
-        TestConditionsActions.createEntityAsPrecondition();
+        TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
         System.out.println("Test Delete Computer Entity has started. ");

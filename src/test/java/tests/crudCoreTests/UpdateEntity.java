@@ -2,7 +2,7 @@ package tests.crudCoreTests;
 
 import coreFunctions.DriverSetup;
 import coreFunctions.GlobalTestConditions;
-import coreFunctions.TestConditionsActions;
+import coreFunctions.TestEntityConditions;
 import org.junit.Assert;
 import org.junit.Test;
 import pageActions.AddNewComputerActions;
@@ -13,7 +13,7 @@ import utils.TimeStamp;
 public class UpdateEntity extends GlobalTestConditions {
     @Test
     public void updateEntity() {
-        TestConditionsActions.createEntityAsPrecondition();
+        TestEntityConditions.createEntityAsPrecondition();
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);
 
         System.out.println("Update entity test has started. ");
@@ -39,6 +39,6 @@ public class UpdateEntity extends GlobalTestConditions {
         Assert.assertEquals("Thinking Machines", EditComputerActions.getEntityCompany());
 
         System.out.println("Update entity test has been completed. ");
-        TestConditionsActions.deleteEntityAsPostCondition();
+        TestEntityConditions.deleteEntityAsPostCondition();
     }
 }

@@ -8,7 +8,7 @@ import utils.TimeStamp;
 import static coreFunctions.DriverSetup.driverInstance;
 import static coreFunctions.GlobalDefinitions.URL;
 
-public class TestConditionsActions {
+public class TestEntityConditions {
     public static void deleteEntityAsPostCondition() {
         driverInstance.navigate().to(URL);
         MainPageActions mainPageActions = new MainPageActions(DriverSetup.driverInstance);

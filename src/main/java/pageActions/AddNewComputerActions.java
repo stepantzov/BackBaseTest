@@ -10,30 +10,34 @@ public class AddNewComputerActions extends AddNewComputerPage {
         this.driver = driver;
     }
 
-    public static void fillComputerNameField(String computerName){
+    public static void fillComputerNameField(String computerName) {
         computerNameFld().clear();
         sendKeys(computerNameFld(), computerName);
     }
 
-    public static void fillIntroducedDateField(String introducedDate){
+    public static void fillIntroducedDateField(String introducedDate) {
         introducedDateFld().clear();
         sendKeys(introducedDateFld(), introducedDate);
     }
 
-    public static void fillDiscontinuedDateField(String discontinuedDate){
+    public static void fillDiscontinuedDateField(String discontinuedDate) {
         discontinuedDateFld().clear();
         sendKeys(discontinuedDateFld(), discontinuedDate);
     }
 
-    public static void selectCompany(int index){
+    public static void selectCompany(int index) {
         companyDropdown().selectByIndex(index);
     }
 
-    public static void clickCreateComputerButton(){
+    public static void clickCreateComputerButton() {
         elementClick(createThisComputerBtn());
     }
 
-    public static void clickCancelButton(){
+    public static void clickCancelButton() {
         elementClick(cancelBtn());
+    }
+
+    public static Boolean verifyIfNameValidationAppear() {
+        return validationOnComputerName().isDisplayed();
     }
 }
