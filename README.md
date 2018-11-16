@@ -22,7 +22,8 @@ Sutable Command line (CMD or GIT Bash);
 - At this moment there two tests suites available to execution: 
 TestCoreSuite.class - contains Critical functionality related to CRUD operations;
 TestEdgeCasesSuite.class - contains all the Test Cases with medium priority, such as fields validation test cases;
-- According to above statement, to Run the necessary test suite please use the next Maven commands below: 
+- According to above statement, to Run the necessary test suite please use the next Maven commands below:
+
 **mvn install -DrunSuite=TestCoreSuite.class
 mvn install -DrunSuite=TestEdgeCasesSuite.class**
 - observe the tests results from console log.
