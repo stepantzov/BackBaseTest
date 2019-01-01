@@ -1,4 +1,4 @@
-# BackBaseTest
+# CRUDTest
 Automated framework for sample computer database
 
 ## Getting Started
